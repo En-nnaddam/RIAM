@@ -1,0 +1,24 @@
+#accueil {
+    position: relative;
+    height: 100vh;
+    background-color: var(--secondary);
+}
+
+.accueil__video-background {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.accueil__welcome-text {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: rgba(44, 110, 73, 0.5);
+    text-align: center;
+    font-size: min(5rem, 10vw);
+}

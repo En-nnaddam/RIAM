@@ -1,0 +1,10 @@
+.labilisation__container {
+    padding: calc(1rem + var(--navigation-height));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    min-height: 100vh;
+    flex-wrap: wrap;
+}
+

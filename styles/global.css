@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+:root {
+    --primary: #FEFEE3;
+    --secondary: #2C6E49;
+    --secondary-light: #4C956C;
+    --ternary: #D68C45;
+    --ternary-light: #FFC9B9;
+    --dark: #222;
+    --error: #f14;
+
+    --navigation-height: 4rem
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: var(--dark);
+    background-color: var(--primary);
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    color: unset;
+    text-decoration: unset;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gap {
+   gap: 1rem;
+}
+
+.mb {
+    margin-bottom: 1rem;
+}
+
+.mb-auto {margin-bottom: auto;}
+.mi-auto {margin-inline: auto;}
+
+.primary-input {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 2px solid var(--dark);
+    font-size: 1.1rem;
+    background-color: white;
+}
+
+.primary-button,
+.secondary-button,
+.secondary-light-button {
+    background-color: var(--secondary);
+    color: var(--primary);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: unset;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.secondary-button {background-color: var(--ternary);}
+.secondary-light-button {
+    background-color:  var(--ternary-light);
+     color: var(--dark);
+}
+
+.primary-button:hover,
+.secondary-button:hover,
+.secondary-light-button:hover {
+    opacity: .9;
+}
+
+.error-alert {
+    background-color: var(--ternary-light);
+    color: var(--error);
+    border: 1px solid;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    min-height: 100vh;
+    padding: calc(1rem + var(--navigation-height));
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        padding-inline: 1rem;
+    }
+}
+
+.primary-header {
+    text-align: center;
+    background-color: var(--ternary-light);
+    padding: 0.5rem 1rem;
+}
+
+.display-none {display: none;}

@@ -1,0 +1,14 @@
+.compte {
+    display: flex;
+    flex-direction: column;
+    margin-inline: auto;
+    width: max-content;
+}
+
+.compte__header {
+    text-align: center;
+    margin-bottom: 1rem;
+    background-color: var(--secondary);
+    color: var(--primary);
+    padding-block: 0.5rem;
+}

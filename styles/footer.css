@@ -1,0 +1,35 @@
+#footer {
+    position: relative;
+    background-color: var(--ternary);
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 4rem;
+}
+
+#footer a:hover {
+    text-decoration: underline;
+}
+
+.footer__column__header {
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--secondary-light);
+}
+
+/* mobile styles */
+@media screen and (max-width: 768px) {
+    #footer {
+        flex-direction: column;
+        gap: 1rem;
+        padding-inline: 1rem;
+    }
+
+    .footer__column__header {
+        margin-bottom: 0.5rem;
+    }
+}
